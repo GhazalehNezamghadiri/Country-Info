@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color:#f2f2f2 ;
+
+}
+
+.background{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('/img/earth.webp');
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size: contain;
+  animation: round 80s linear infinite;
+}
+
+@keyframes round{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
